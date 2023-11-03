@@ -23,8 +23,8 @@ data_summary <- function(data, x, y, nar.rm=TRUE) {
 #' Data Summary Function
 #' Description: This function groups a numeric variable "y" by a different variable "x" and then provides the mean, standard deviation, and interquartile range of "y" for each category or value of "x". This function removes NA values and will produce an error message if "y" is not numeric data. This function is useful for quickly generating several important summary statistics for data exploration. 
 #' @param data A data frame with at least 2 columns.
-#' @param x A variable of any class.
-#' @param y A numeric variable.
+#' @param x A variable of any class. I named this parameter X because it is the standard naming convention for the first variable in a function.
+#' @param y A numeric variable. I named this variable y because it is the standard naming convention for the second variable in a function.
 #' @param nar.rm NA points will not cause an error, but they will be removed. 
 #'
 #' @return the mean, standard deviation, and interquartile range of variable y, grouped by variable x.
@@ -121,7 +121,7 @@ test_that("Testing valid data", {
 })
 ```
 
-    ## Test passed 😸
+    ## Test passed 🎊
 
 Testing categorical variable for x and numeric variable for y with NA
 values, expecting 3 rows.
@@ -134,7 +134,7 @@ test_that("Testing valid data with NA", {
 })
 ```
 
-    ## Test passed 🎊
+    ## Test passed 🥳
 
 Testing categorical variable for X and categorical variable for Y,
 expecting an error. To do this I created a new data frame with only
@@ -150,4 +150,4 @@ test_that("data_summary handles non-numeric 'y'", {
 })
 ```
 
-    ## Test passed 😸
+    ## Test passed 🎉
