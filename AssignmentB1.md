@@ -121,7 +121,7 @@ test_that("Testing valid data", {
 })
 ```
 
-    ## Test passed 🥇
+    ## Test passed 😸
 
 Testing categorical variable for x and numeric variable for y with NA
 values, expecting 3 rows.
@@ -134,7 +134,7 @@ test_that("Testing valid data with NA", {
 })
 ```
 
-    ## Test passed 🌈
+    ## Test passed 🎊
 
 Testing categorical variable for X and categorical variable for Y,
 expecting an error. To do this I created a new data frame with only
@@ -150,4 +150,4 @@ test_that("data_summary handles non-numeric 'y'", {
 })
 ```
 
-    ## Test passed 🎉
+    ## Test passed 😸
